@@ -163,7 +163,7 @@ You can see that the result of the `-d` option is very similar to the result gen
     
 `java -jar diranalyzer.jar test/ -f full_scan_result_1.xml -d diff_scan_result_1.xml`
  
-#### Generate Ongoing Difference Result Scan 
+#### Generate On Going Difference Result Scan 
 
 First of all, let's make some modification to our test folder. We will remove, update and delete files as follow:
 

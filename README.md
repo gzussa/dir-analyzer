@@ -318,3 +318,6 @@ By doing so, you will get the following result for `diff_scan_result_3.xml`:
 </a_build>
 ``` 
 Since you are using a simplified previous generated full result scan, some attributes won't be displayed for deleted files or directories.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gzussa/dir-analyzer/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

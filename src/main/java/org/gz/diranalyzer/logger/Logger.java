@@ -12,7 +12,7 @@ public class Logger {
 	
 	public static void debug(boolean isDebug, String message){
 		if(isDebug){
-			System.err.println(message);
+			System.out.println(message);
 		}
 	}
 }

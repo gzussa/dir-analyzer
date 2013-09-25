@@ -1,27 +1,48 @@
-Description
+# Dir-Analyzer
 
-dir-analyser is a java tool that is able to analyze a directory structure. dir-analyzer generate file 
+## About
+### What is it?
 
-To get some help, run the following command:
+Dir-Analyser is a java tool that is able to take a matadata snapshot of a directory structure. It can also compare directory changes between two snapshots. Results are currently returned as generated xml files.
+
+### Where to use it?
+
+For example, you can use Dir-Analyzer in your build system in order to list every changes made between two builds.
+You can also use Dir-Analyze in order to compare two similar directories and check differences.
+
+## Getting Started
+
+### How to get Dir-Analyzer
+#### Build from source
+
+Check out the sources from `https://github.com/gzussa/dir-analyzer.git` and then import the project into Eclipse as a Java Project
+Then set up your project as a Maven project so you can fix dependencies. Optionally, you can set up your project as a Spring project as well (I recommend to use Eclipse STS).
+
+#### Test and Export
+Tests are available in the following path `src/test/java`. Tests are using the Junit framework. Execute `AllTests.java` with JUnit to execute all available tests.
+Finally you can export your project as a executable jar so you can use it.
+
+#### Execute and get help
+
+To get some help but also to make sure that your executable jar works correctly, run the following command:
 
     java -jar diranalyser.jar
 
 It will show the following message:
 
-Argument "" is required
-java -jar diranalyzer [options...] arguments...
- VAL    : Path to scan
- -d VAL : Result file name containing the scan difference
- -e VAL : Output format, xml(default) or json
- -f VAL : File name containing the full Scan Result
- -p VAL : Previous scan file name
- -x     : Turn on debug mode
+    Argument "" is required
+    java -jar diranalyzer [options...] arguments...
+    VAL    : Path to scan
+    -d VAL : Result file name containing the scan difference
+    -e VAL : Output format, xml(default) or json
+    -f VAL : File name containing the full Scan Result
+    -p VAL : Previous scan file name
+    -x     : Turn on debug mode
 
- Example: java -jar diranalyzer -d VAL -e VAL -f VAL -p VAL -x
+    Example: java -jar diranalyzer -d VAL -e VAL -f VAL -p VAL -x
  
- Here are some simple usage example
+ ### Get a Directory Scan
  
- GET A FOLDER SCAN
  Let's create a test folder
 
     mkdir test/

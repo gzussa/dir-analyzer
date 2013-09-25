@@ -165,13 +165,11 @@ You can see that the result of the `-d` option is very similar to the result gen
  
 #### Generate On Going Difference Result Scan 
 
-First of all, let's make some modification to our test folder. We will remove, update and delete files as follow:
+First of all, let's make some modifications to our test folder. We will remove, update and delete files as follow:
 
-remove one file: `rm test/dir1/file2.txt` 
-
-create a new file: `vi test/dir1/file3.txt`
-
-`vi test/file1.txt` (write something in this file and save)
+1. Remove one file: `rm test/dir1/file2.txt` 
+2. Ceate a new file: `vi test/dir1/file3.txt`
+3. Update file1.txt: `vi test/file1.txt` (write something in this file and save)
  
 Now, let's execute the tool as follow:
  `java -jar diranalyzer.jar test/ -x -d diff_scan_result_2.xml -f full_scan_result_2.xml -p full_scan_result_1.xml`
@@ -329,7 +327,7 @@ Has Dir-Analyzer been helpful to you?  If you'd like to give back, here are a fe
 1. Blog about your experiences using Dir-Analyzer, and let us know about it!
 2. Create/Find use cases using Dir-Analyzer and add it to the documentation.
 3. Improve the docs in the README.
-4. Fix a bug or add a new feature and submit a pull request (see below)
+4. Fix a bug or add a new feature and submit a pull request (see below).
 
 ### Roadmap
 Here is a list of things that would need to be done:
@@ -337,7 +335,7 @@ Here is a list of things that would need to be done:
 - Being able to export result files in JSON format rather than xml format. Basically, the logic behind the `-e` option need to be implemented.
 - Integrate the tool with a more robust, generic and configurable logging framework. For example log4j.
 - Add more reports in the build process using maven plugins. Code coverage, Static code analysis, cyclomatic complexity, etc...
-- Add Javadoc
+- Add Javadoc.
 
 ### Pull Requests
 

@@ -1,5 +1,7 @@
 # Dir-Analyzer
 
+[![Build Status](https://travis-ci.org/gzussa/dir-analyzer.png?branch=master)](https://travis-ci.org/gzussa/dir-analyzer)
+
 ## About
 ### What is it?
 
@@ -318,6 +320,92 @@ By doing so, you will get the following result for `diff_scan_result_3.xml`:
 </a_build>
 ``` 
 Since you are using a simplified previous generated full result scan, some attributes won't be displayed for deleted files or directories.
+
+## Get Involved
+### Ways to Contribute
+
+Has Dir-Analyzer been helpful to you?  If you'd like to give back, here are a few ways:
+
+1. Blog about your experiences using Dir-Analyzer, and let us know about it!
+2. Create/Find use cases using Dir-Analyzer and add it to the documentation.
+3. Improve the docs in the README.
+4. Fix a bug or add a new feature and submit a pull request (see below)
+
+### Roadmap
+Here is a list of things that would need to be done:
+
+- Being able to export result files in JSON format rather than xml format. Basically, the logic behind the `-e` option need to be implemented.
+- Integrate the tool with a more robust, generic and configurable logging framework. For example log4j.
+- Add more reports in the build process using maven plugins. Code coverage, Static code analysis, cyclomatic complexity, etc...
+
+### Pull Requests
+
+Pull requests are welcome.  For any significant change or new feature, please start a discussion or log an issue in the Google Group first.  This will save you some time, in case your idea is deemed not general enough to be included in Dir-Analyzer.
+
+Before submitting a pull request, please:
+
+1. Write unit tests to cover any new or modified lines of code, and add it to `src/java/test`.
+2. Run the Maven task to build and tests the project. See the [Build](#build) section for more info.
+
+## Build
+
+### Maven
+
+Dir-Analyzer uses [Maven](http://maven.apache.org) to verify each build.  If you are not familiar with Maven, check out the [getting started guide](http://maven.apache.org/guides/getting-started/index.html) for an introduction and installation instructions.
+
+Before submitting a pull request, please run the Maven tasks.  To do so:
+
+First, make sure you can compile without error. 
+
+```
+mvn compile
+```
+
+Then compile and run tests
+
+```
+mvn test
+```
+
+Finally make sur you can generate the jar file
+
+```
+mvn package
+```
+
+and/or run
+
+```
+mvn install
+```
+
+### Continuous Integration
+
+#### Travis-CI
+The Maven build is run automatically using [Travis-CI](travis-ci.org) upon every pull request and push to master.  But if any errors are found, you'll need to fix them and re-submit your pull request.  So please run the grunt task locally to save time.
+
+##Licence
+
+The MIT License (MIT)
+
+Copyright (c) 2013 Gregory
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gzussa/dir-analyzer/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 

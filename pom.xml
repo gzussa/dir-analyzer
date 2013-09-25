@@ -1,13 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.gz.diranalyzer</groupId>
-  <artifactId>diranalyser</artifactId>
+  <groupId>org.gz.diranalyser</groupId>
+  <artifactId>dir-analyser</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+  <packaging>jar</packaging>
+  <name>Dir-Analyzer</name>
+  <description>Tool that let you scan an entire folder and/or let you check changes that occur to a directory over time</description>
   <properties>
 
 		<!-- Generic properties -->
-		<java.version>1.6</java.version>
+		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -15,6 +17,38 @@
 		<junit.version>4.11</junit.version>
 
 	</properties>
+	
+	<licenses>
+        <license>
+            <name>The MIT License (MIT)</name>
+            <url>http://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+    
+    <mailingLists>
+        <mailingList>
+            <name>Dir-Analyzer developer group</name>
+            <subscribe>dir-analyzer@googlegroups.com</subscribe>
+            <unsubscribe>dir-analyzer-unsubscribe@googlegroups.com</unsubscribe>
+            <post>dir-analyzer@googlegroups.com</post>
+            <archive>http://groups.google.com/group/dir-analyzer</archive>
+        </mailingList>
+    </mailingLists>
+    
+    <developers>
+        <developer>
+            <id>gzussa</id>
+            <name>Gregory Zussa</name>
+            <timezone>+0</timezone>
+        </developer>
+    </developers>
+    
+    <scm>
+        <connection>scm:git:git@github.com:gzussa/dir-analyzer.git</connection>
+        <developerConnection>scm:git:git@github.com:gzussa/dir-analyzer.git</developerConnection>
+        <url>scm:git:git@github.com:gzussa/dir-analyzer.git</url>
+        <tag>HEAD</tag>
+    </scm>
 	
 	<dependencies>	
 		<dependency>
@@ -38,7 +72,6 @@
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
-		</dependency>
-		              
+		</dependency>	              
 	</dependencies>	
 </project>

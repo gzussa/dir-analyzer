@@ -14,8 +14,8 @@ You can also use Dir-Analyze in order to compare two similar directories and che
 
 ## Getting Started
 
-### How to get Dir-Analyzer
-#### Build from source
+### How to Get Dir-Analyzer
+#### Build From Source
 
 Check out the sources from `https://github.com/gzussa/dir-analyzer.git` and then import the project into Eclipse as a Java Project.
 Then set up your project as a Maven project so you can fix dependencies. Optionally, you can set up your project as a Spring project as well (I recommend to use Eclipse STS).
@@ -24,7 +24,7 @@ Then set up your project as a Maven project so you can fix dependencies. Optiona
 Tests are available in the following path `src/test/java`. Tests are using the JUnit framework. Execute `AllTests.java` with JUnit to run all available tests.
 Finally you can export your project as a executable jar so you can use it.
 
-#### Execute and get help
+#### Execute and Get Help
 
 To get some help but also to make sure that your executable jar works correctly, run the following command:
 
@@ -263,7 +263,7 @@ No surprises, we are getting an updated full result scan here.
 
 As expected, the difference result scan shows what have been `CREATED`, `UPDATED` and `DELETED`. Files and Directories that haven't been changed are not shown here but are listed in the full result scan above.
 
-#### How to optimize everything
+#### How to Optimize Everything
 
 You can also generate the difference result scan without generating the full result scan.
 
@@ -337,6 +337,7 @@ Here is a list of things that would need to be done:
 - Being able to export result files in JSON format rather than xml format. Basically, the logic behind the `-e` option need to be implemented.
 - Integrate the tool with a more robust, generic and configurable logging framework. For example log4j.
 - Add more reports in the build process using maven plugins. Code coverage, Static code analysis, cyclomatic complexity, etc...
+- Add Javadoc
 
 ### Pull Requests
 

@@ -336,6 +336,7 @@ Here is a list of things that would need to be done:
 - Integrate the tool with a more robust, generic and configurable logging framework. For example log4j.
 - Add more reports in the build process using maven plugins. Code coverage, Static code analysis, cyclomatic complexity, etc...
 - Add Javadoc.
+- Add filter capability so that we can include and/or exclude path to analyse.
 
 ### Pull Requests
 

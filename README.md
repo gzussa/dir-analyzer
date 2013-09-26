@@ -380,6 +380,12 @@ mvn install
 #### Travis-CI
 The Maven build is run automatically using [Travis-CI](travis-ci.org) upon every pull request and push to master.  But if any errors are found, you'll need to fix them and re-submit your pull request.  So please run the grunt task locally to save time.
 
+## Contact
+
+Any feedback/question/request please visit the [discussion group](http://groups.google.com/group/dir-analyzer)
+
+If you are using the Dir-Analyzer library in your project, I would greatly appreciate it if you can send me a link to your project so I can get an idea on how it is being used and what kind of features/changes would be good to have in the future.
+
 ##Licence
 
 The MIT License (MIT)

@@ -22,7 +22,7 @@ Then set up your project as a Maven project so you can fix dependencies. Optiona
 
 #### Test and Export
 Tests are available in the following path `src/test/java`. Tests are using the JUnit framework. Execute `AllTests.java` with JUnit to run all available tests.
-Finally you can export your project as a executable jar so you can use it.
+Finally you can export your project as a executable jar so you can use it. You can either use Eclipse export feature or use Maven. See the [Build](#build) section for more details.
 
 #### Execute and Get Help
 

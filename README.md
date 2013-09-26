@@ -340,7 +340,7 @@ Pull requests are welcome.  For any significant change or new feature, please st
 
 Before submitting a pull request, please:
 
-1. Write unit tests to cover any new or modified lines of code, and add it to `src/java/test`.
+1. Write unit tests to cover any new or modified lines of code, and add it to `src/test/java`.
 2. Run the Maven task to build and tests the project. See the [Build](#build) section for more info.
 
 ## Build

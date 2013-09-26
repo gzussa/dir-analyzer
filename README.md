@@ -49,10 +49,10 @@ It will show the following message:
 
 1. `mkdir test/`
 2. `mkdir test/dir1`
-3. `vi test/file1.txt` (when you are in Vim just save and quit Esc then :wq!)
-4. `vi test/dir1/file2.txt` (when you are in Vim just save and quit Esc then :wq!)
+3. `vi test/file1.txt` (when you are in Vim just save and quit Esc then `:wq!`)
+4. `vi test/dir1/file2.txt` (when you are in Vim just save and quit Esc then `:wq!`)
 
- Now, you have created your environment scenario, run the following command:
+Now, you have created your environment scenario, run the following command:
  
 `java -jar diranalyzer.jar test/ -x -f full_scan_result_1.xml`
  
@@ -166,7 +166,7 @@ First of all, let's make some modifications to our test folder. We will remove, 
 
 1. Remove one file: `rm test/dir1/file2.txt` 
 2. Ceate a new file: `vi test/dir1/file3.txt`
-3. Update file1.txt: `vi test/file1.txt` (write something in this file and save)
+3. Update `file1.txt`: `vi test/file1.txt` (write something in this file and save)
  
 Now, let's execute the tool as follow:
  `java -jar diranalyzer.jar test/ -x -d diff_scan_result_2.xml -f full_scan_result_2.xml -p full_scan_result_1.xml`

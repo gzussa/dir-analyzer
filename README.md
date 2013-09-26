@@ -363,17 +363,13 @@ Then compile and run tests
 mvn test
 ```
 
-Finally make sur you can generate the jar file
+Make sur you can generate the jar file
 
 ```
-mvn package
+mvn package shade:shade
 ```
 
-and/or run
-
-```
-mvn install
-```
+Finally test your jar file
 
 ### Continuous Integration
 

@@ -17,7 +17,7 @@ public class DirAnalyzer {
 	@Option(name="-e", required=false, usage="Output format, xml(default) or json")
 	private String fileExtension = Constants.XML_OUTPUT_FORMAT;
 	
-	@Option(name="-f", required=false, usage="File name containing the full Scan Result")
+	@Option(name="-f", required=false, usage="File name containing the full Result Scan")
 	private String fullScanResultFilePath;
 	
 	@Option(name="-p", required=false, usage="Previous scan file name")

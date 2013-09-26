@@ -37,7 +37,7 @@ It will show the following message:
     VAL    : Path to scan
     -d VAL : Result file name containing the scan difference
     -e VAL : Output format, xml(default) or json
-    -f VAL : File name containing the full Scan Result
+    -f VAL : File name containing the full Result Scan
     -p VAL : Previous scan file name
     -x     : Turn on debug mode
 
@@ -47,13 +47,10 @@ It will show the following message:
  
  Let's create a test folder as a get started scenario in order to better demonstrate how this tool works.
 
-`mkdir test/`
-
-`mkdir test/dir1`
-
-`vi test/file1.txt` (when you are in Vim just save and quit Esc then :wq!)
-
-`vi test/dir1/file2.txt` (when you are in Vim just save and quit Esc then :wq!)
+1. `mkdir test/`
+2. `mkdir test/dir1`
+3. `vi test/file1.txt` (when you are in Vim just save and quit Esc then :wq!)
+4. `vi test/dir1/file2.txt` (when you are in Vim just save and quit Esc then :wq!)
 
  Now, you have created your environment scenario, run the following command:
  
@@ -174,11 +171,9 @@ First of all, let's make some modifications to our test folder. We will remove, 
 Now, let's execute the tool as follow:
  `java -jar diranalyzer.jar test/ -x -d diff_scan_result_2.xml -f full_scan_result_2.xml -p full_scan_result_1.xml`
  
- The `-p` option is used to specify the previous generated result scan we want to use in order to perform the comparaison with the current state of the folder.
- 
- `full_scan_result_2.xml` will display the new updated full result scan.
- 
- `diff_scan_result_2.xml` will only shows difference between `full_scan_result_1.xml` and the current test directory state.
+ - The `-p` option is used to specify the previous generated result scan we want to use in order to perform the comparaison with the current state of the folder.
+ - `full_scan_result_2.xml` will display the new updated full result scan.
+ - `diff_scan_result_2.xml` will only shows difference between `full_scan_result_1.xml` and the current test directory state.
  
 `vi full_scan_result_2.xml`:
 
@@ -337,10 +332,11 @@ Here is a list of things that would need to be done:
 - Add more reports in the build process using maven plugins. Code coverage, Static code analysis, cyclomatic complexity, etc...
 - Add Javadoc.
 - Add filter capability so that we can include and/or exclude path to analyse.
+- Add property file configurations so that we can change xml elements and attributes names.
 
 ### Pull Requests
 
-Pull requests are welcome.  For any significant change or new feature, please start a discussion or log an issue in the Google Group first.  This will save you some time, in case your idea is deemed not general enough to be included in Dir-Analyzer.
+Pull requests are welcome.  For any significant change or new feature, please start a discussion or log an issue in the [Google Group](http://groups.google.com/group/dir-analyzer) first.  This will save you some time, in case your idea is deemed not general enough to be included in Dir-Analyzer.
 
 Before submitting a pull request, please:
 

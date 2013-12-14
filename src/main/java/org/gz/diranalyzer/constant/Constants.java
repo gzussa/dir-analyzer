@@ -23,7 +23,7 @@
 package org.gz.diranalyzer.constant;
 
 public interface Constants {
-	public final String APPLICATION_NAME = "diranalyzer";
+	public final String APPLICATION_NAME = "diranalyzer.jar";
 	
 	public final String XML_OUTPUT_FORMAT = "xml";
 	
